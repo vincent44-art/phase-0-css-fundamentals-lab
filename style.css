@@ -1,32 +1,42 @@
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+h1 {
+  color: red;
 }
-header{
+header h1 {
   text-align: center;
-
 }
-img{
+#featured-property img {
   display: block;
-  margin: auto;
-
-}
-nav a {
-  padding-left: 10px;
-  padding-right: 10px;
-
-}
-nav {
-  text-align: center;
-  background-color: #348db3;
-}
-#feature-property p {
-  width: 800px;
   margin: 0 auto;
-  text-align: centre;
-
 }
-div{
+.nav-bar {
+  text-align: center;
+}
+
+.nav-link {
+  padding: 0 10px;
+  background-color: grey; /* You can change this color */
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: darkgrey;
+}
+#featured-property figcaption {
+  text-align: center;
+  font-size: 0.8rem;
+}
+#details div {
   float: left;
-} 
+  width: 25%; /* Each div takes up a quarter of the width */
+  text-align: center;
+  background-color: #f0f0f0; /* Light grey background */
+  padding: 10px;
+  box-sizing: border-box; /* Includes padding within the width */
+}
+
+#details::after {
+  content: "";
+  display: block;
+  clear: both;
+}
